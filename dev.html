@@ -1,0 +1,97 @@
+<!-- <!DOCTYPE HTML> -->
+<html lang="en">
+<head> <meta charset="UTF-8"> <title>BuzzOff</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"><style type="text/css">
+body { margin: 0; padding: 0; background: #222; font-family: "Lucida Console", Courier, monospace; 
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+user-select: none;
+}
+canvas { background: #fff; display: block; margin: 0 auto; cursor: crosshair;  display: none;
+image-rendering: pixelated;
+image-rendering: -moz-pixelated;
+image-rendering: -webkit-pixelated;
+}
+@-moz-keyframes boom {
+	0% { -moz-transform: translate(2px, 1px) rotate(0deg); }
+	10% { -moz-transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { -moz-transform: translate(-3px, 0px) rotate(1deg); }
+	30% { -moz-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -moz-transform: translate(1px, -1px) rotate(1deg); }
+	50% { -moz-transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { -moz-transform: translate(-3px, 1px) rotate(0deg); }
+	70% { -moz-transform: translate(2px, 1px) rotate(-1deg); }
+	80% { -moz-transform: translate(-1px, -1px) rotate(1deg); }
+	90% { -moz-transform: translate(2px, 2px) rotate(-1deg); }
+	100% { -moz-transform: translate(px, 0px) rotate(0deg); }
+}
+@-webkit-keyframes boom {
+	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+	50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+	70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+	90% { -webkit-transform: translate(2px, 2px) rotate(-1deg); }
+	100% { -webkit-transform: translate(px, 0px) rotate(0deg); }
+}
+.shake {
+	-moz-animation-name: boom;
+	-moz-animation-duration: 0.5s;
+	-moz-transform-origin:50% 50%;
+	-moz-animation-timing-function: linear;
+	-webkit-animation-name: boom;
+	-webkit-animation-duration: 0.5s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-timing-function: linear;
+}
+h1 { left: 0; line-height: 200px; margin: auto; margin-top: -100px; position: absolute; top: 50%; width: 100%; text-align: center; }
+#l { color: #ff0; font-size: 150%; }
+</style>
+</head>
+<body>
+<div id="l"><h1 id="h">Loading</h1></div>
+<canvas id="b"></canvas>
+
+<script src="js/engine/game.js"></script>
+<script src="js/engine/load.js"></script>
+<script src="js/engine/utils.js"></script>
+<script src="js/engine/input.js"></script>
+<script src="js/engine/anim.js"></script>
+<script src="js/engine/emitter.js"></script>
+<script src="js/engine/sprite.js"></script>
+<script src="js/engine/particle.js"></script>
+<script src="js/engine/transition.js"></script>
+<script src="js/data.js"></script>
+
+<script src="js/lib/jsfxr.js"></script>
+
+
+<script src="js/states/intro.js"></script>
+<script src="js/states/splash.js"></script>
+<script src="js/states/play.js"></script>
+<script src="js/states/gameover.js"></script>
+
+<script src="js/entities/ant.js"></script>
+<script src="js/entities/bug.js"></script>
+<script src="js/entities/skull.js"></script>
+<script src="js/entities/worm.js"></script>
+<script src="js/entities/bee.js"></script>
+<script src="js/entities/hornet.js"></script>
+<script src="js/entities/bullet.js"></script>
+<script src="js/entities/hive.js"></script>
+<script src="js/entities/explosion.js"></script>
+<script src="js/entities/combo.js"></script>
+<script src="js/entities/slider.js"></script>
+<script src="js/entities/powerup.js"></script>
+
+<script src="js/engine/boot.js"></script>
+
+
+
+</body>
+</html>
